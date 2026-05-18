@@ -1,0 +1,317 @@
+:root {
+    --kart-bg: #ffffff;
+    --kart-golge: 0 10px 20px rgba(0,0,0,0.08);
+    --vurgu-renk: #3498db;
+    --metin-renk: #2c3e50;
+    --tarih-renk: #7f8c8d;
+}
+
+
+.kimyacilar-container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.bilim-insani-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+
+.biyografi-kart {
+    background: var(--kart-bg);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--kart-golge);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee;
+    text-decoration: none; 
+    display: flex;
+    flex-direction: column;
+    color: inherit;
+}
+
+.biyografi-kart:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    border-color: var(--vurgu-renk);
+}
+
+.kart-ust {
+    height: 100px;
+    background: linear-gradient(135deg, #ecf0f1, #bdc3c7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.profil-daire {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--vurgu-renk);
+    border: 3px solid white;
+}
+
+.kart-icerik {
+    padding: 50px 20px 20px 20px;
+    text-align: center;
+}
+
+.bilim-insani-isim {
+    font-size: 1.3rem;
+    color: var(--metin-renk);
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.yasam-yillari {
+    font-size: 0.85rem;
+    color: var(--tarih-renk);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.kisa-ozet {
+    font-size: 0.9rem;
+    color: #636e72;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.incele-btn {
+    font-size: 0.9rem;
+    color: var(--vurgu-renk);
+    font-weight: bold;
+}
+
+.biyografi-header {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.biyografi-profil {
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: #2c3e50;
+    flex-shrink: 0;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    z-index: 2;
+}
+
+.biyografi-basliklar {
+    z-index: 2;
+}
+
+.biyografi-basliklar h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.etiket-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.etiket {
+    padding: 5px 12px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.biyografi-icerik {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.bolum-baslik {
+    font-size: 1.5rem;
+    color: var(--sidebar-bg);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    margin-top: 30px;
+}
+.bolum-baslik:first-child { margin-top: 0; }
+
+.soz-kutusu {
+    background: #f8f9fa;
+    border-left: 5px solid var(--vurgu-renk);
+    padding: 20px;
+    margin: 30px 0;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.profil-daire {
+    width: 115px;       
+    height: 115px;      
+    
+    position: absolute;
+    bottom: -55px;      
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: white;
+    border: 3px solid white; 
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+    overflow: hidden;   
+    padding: 0;         
+    align-items: center;
+    justify-content: center;
+    
+ 
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--vurgu-renk);
+}
+
+
+.profil-daire img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 50%;
+    display: block;
+}
+
+
+
+.biyografi-profil {
+    width: 200px;   
+    height: 200px;  
+    
+   
+    flex-shrink: 0; 
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    z-index: 2;
+
+   
+    overflow: hidden; 
+    padding: 0; 
+    border: 4px solid rgba(255,255,255,0.3); 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.biyografi-profil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+
+
+.zaman-cizelgesi-kapsayici {
+    margin: 40px 0;
+    padding-left: 20px;
+    border-left: 3px solid #eee;
+}
+
+.olay-karti {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+
+.olay-karti::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background: var(--vurgu-renk);
+    border-radius: 50%;
+    position: absolute;
+    left: -9px; 
+    top: 5px;
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px var(--vurgu-renk);
+}
+
+.olay-yili {
+    font-weight: 800;
+    color: var(--vurgu-renk);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.olay-aciklama {
+    font-size: 0.95rem;
+    color: #555;
+    background: #fdfdfd;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+}
+
+.biliyor-muydunuz {
+    background: linear-gradient(to right, #f8f9fa, #ffffff);
+    border-left: 5px solid #f1c40f; 
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 0 10px 10px 0;
+}
+
+.biliyor-muydunuz h3 {
+    color: #f39c12;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.miras-kutu {
+    background-color: #f1f2f6;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 40px;
+}
+.miras-kutu i {
+    font-size: 2rem;
+    color: var(--vurgu-renk);
+    margin-bottom: 15px;
+}

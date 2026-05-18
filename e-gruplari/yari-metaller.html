@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Yarı Metaller - Element Grupları</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/element-gruplari.css">
+    <style>
+        .grup-detay-header {
+            background: linear-gradient(135deg, #00d2d3, #0fb9b1); 
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 15px rgba(0, 210, 211, 0.4);
+        }
+        .grup-detay-header h1 { margin-bottom: 15px; font-size: 2.5rem; }
+        .grup-detay-header p { font-size: 1.1rem; line-height: 1.6; opacity: 0.95; font-weight: 500; }
+        
+        .element-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .el-kart {
+            background: white;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .el-kart:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-color: #00d2d3; 
+        }
+        .el-no { font-size: 0.9rem; color: #777; margin-bottom: 5px; }
+        .el-sembol { font-size: 2.5rem; font-weight: bold; color: #0fb9b1; margin-bottom: 5px; }
+        .el-isim { font-weight: 600; font-size: 1.1rem; }
+    </style>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <ul>
+            <li><a href="../index.html"><i class="fa-solid fa-house"></i><span class="link-text">Ana Sayfa</span></a></li>
+            <li><a href="elementgruplari.html" class="aktif"><i class="fa-solid fa-atom"></i><span class="link-text">Element Grupları</span></a></li>
+            <li><a href="../kimyacilar/kimyacilar.html"><i class="fa-solid fa-flask"></i><span class="link-text">Kimya Öncüleri</span></a></li>
+            <li><a href="../listeler/ilginc-listeler.html"><i class="fa-solid fa-list-ul"></i><span class="link-text">İlginç Listeler</span></a></li>
+
+        </ul>
+    </aside>
+
+    <div class="icerik">
+        <div class="ust-baslik">
+            <div class="site-logo">ATOMİK<span style="color:var(--ana-renk)">BİLGİ</span></div>
+            <a href="elementgruplari.html" class="geri-btn"><i class="fa-solid fa-arrow-left"></i> Gruplara Dön</a>
+        </div>
+
+        <div class="gruplar-container">
+            <div class="grup-detay-header">
+                <h1><i class="fa-solid fa-microchip"></i> Yarı Metaller (Metaloidler)</h1>
+                <p>
+                    Yarı metaller, periyodik tabloda metaller ile ametaller arasında "merdiven" şeklinde yer alan özel bir gruptur. 
+                    Hem metallerin hem de ametallerin özelliklerini taşırlar. Bu "melez" yapıları, onları modern elektronik teknolojisinin (bilgisayarlar, telefonlar) vazgeçilmezi yapar.
+                </p>
+                <p style="margin-top: 15px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 15px;">
+                    <strong>Genel Özellikleri:</strong> <br>
+                    • Fiziksel olarak metallere benzerler (parlak, katı).<br>
+                    • Kimyasal olarak ametallere benzerler (kırılgan, kovalent bağ yapar).<br>
+                    • Yarı iletkendirler; elektrik iletkenlikleri sıcaklıkla artar (Metallerin tam tersi).
+                </p>
+            </div>
+
+            <div class="ozellik-grid">
+                <div class="ozellik-kutu" style="border-color: #00d2d3;">
+                    <h3 style="color: #0fb9b1;"><i class="fa-solid fa-bolt"></i> Yarı İletkenlik</h3>
+                    <p>Elektriği metaller kadar iyi iletmezler ama ametaller gibi yalıtkan da değillerdir. Bu akışı kontrol edebilmek, çiplerin çalışmasını sağlar.</p>
+                </div>
+                <div class="ozellik-kutu" style="border-color: #00d2d3;">
+                    <h3 style="color: #0fb9b1;"><i class="fa-solid fa-gem"></i> Kırılganlık</h3>
+                    <p>Görünüşleri metalik ve parlak olsa da, çekiçle vurulduğunda metaller gibi şekil almazlar, cam gibi kırılırlar.</p>
+                </div>
+                <div class="ozellik-kutu" style="border-color: #00d2d3;">
+                    <h3 style="color: #0fb9b1;"><i class="fa-solid fa-flask"></i> Amfoterik Özellik</h3>
+                    <p>Bazı oksitleri hem asitlerle hem de bazlarla tepkimeye girebilir. Kimyasal tepkimelerde çok yönlüdürler.</p>
+                </div>
+            </div>
+
+            <div class="bilgi-paneli">
+                <h2><i class="fa-solid fa-scale-balanced"></i> Metal mi, Ametal mi?</h2>
+                <p>Yarı metaller tam ortada durur. İşte onları diğerlerinden ayıran farklar:</p>
+                
+                <table class="trend-tablosu">
+                    <thead>
+                        <tr>
+                            <th>Özellik</th>
+                            <th>Metaller</th>
+                            <th>Yarı Metaller</th>
+                            <th>Ametaller</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Görünüm</strong></td>
+                            <td>Parlak</td>
+                            <td>Genellikle Parlak</td>
+                            <td>Genellikle Mat</td>
+                        </tr>
+                        <tr>
+                            <td><strong>İletkenlik</strong></td>
+                            <td>Çok İyi</td>
+                            <td>Orta (Yarı İletken)</td>
+                            <td>Kötü (Yalıtkan)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>İşlenebilirlik</strong></td>
+                            <td>Dövülebilir / Tel Olabilir</td>
+                            <td>Kırılgan</td>
+                            <td>Kırılgan</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sıcaklık Etkisi</strong></td>
+                            <td>Isınınca iletkenlik <strong>azalır</strong></td>
+                            <td>Isınınca iletkenlik <strong>artar</strong></td>
+                            <td>Etkisi değişir / yalıtkan</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bilgi-paneli">
+                <h2><i class="fa-solid fa-robot"></i> Teknolojinin Kalbi</h2>
+                <div class="kullanim-listesi">
+                    <li style="border-left: 5px solid #2980b9;"><strong>Silisyum (Si):</strong> Bilgisayar çipleri, işlemciler, güneş panelleri (Elektroniğin temeli).</li>
+                    <li style="border-left: 5px solid #27ae60;"><strong>Bor (B):</strong> Isıya dayanıklı camlar (Borcam), bitki gübreleri, deterjanlar.</li>
+                    <li style="border-left: 5px solid #8e44ad;"><strong>Germanyum (Ge):</strong> Fiber optik kablolar, gece görüş lensleri, eski transistörler.</li>
+                    <li style="border-left: 5px solid #f39c12;"><strong>Arsenik (As):</strong> Galyum arsenit (GaAs) olarak süper hızlı çiplerde ve LED'lerde.</li>
+                    <li style="border-left: 5px solid #c0392b;"><strong>Antimon (Sb):</strong> Kurşun aküleri sertleştirmek için, alev geciktirici malzemeler.</li>
+                </div>
+            </div>
+
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px;">Bu Gruptaki Elementler</h2>
+            
+            <div class="element-grid">
+                
+                <a href="../elementler/bor.html" class="el-kart">
+                    <span class="el-no">5</span><span class="el-sembol">B</span><span class="el-isim">Bor</span>
+                </a>
+
+                <a href="../elementler/silisyum.html" class="el-kart">
+                    <span class="el-no">14</span><span class="el-sembol">Si</span><span class="el-isim">Silisyum</span>
+                </a>
+
+                <a href="../elementler/germanyum.html" class="el-kart">
+                    <span class="el-no">32</span><span class="el-sembol">Ge</span><span class="el-isim">Germanyum</span>
+                </a>
+
+                <a href="../elementler/arsenik.html" class="el-kart">
+                    <span class="el-no">33</span><span class="el-sembol">As</span><span class="el-isim">Arsenik</span>
+                </a>
+
+                <a href="../elementler/antimon.html" class="el-kart">
+                    <span class="el-no">51</span><span class="el-sembol">Sb</span><span class="el-isim">Antimon</span>
+                </a>
+
+                <a href="../elementler/tellur.html" class="el-kart">
+                    <span class="el-no">52</span><span class="el-sembol">Te</span><span class="el-isim">Tellür</span>
+                </a>
+
+                <a href="../elementler/polonyum.html" class="el-kart">
+                    <span class="el-no">84</span><span class="el-sembol">Po</span><span class="el-isim">Polonyum</span>
+                </a>
+
+            </div>
+        </div>
+
+        <footer style="background-color: #1e293b; color: #94a3b8; text-align: center; padding: 20px 0; margin-top: 50px; font-family: sans-serif; font-size: 14px;">
+             &copy; 2025 Periyodik Tablo Web Sitesi — Hazırlayan: <span style="color: #fff; font-weight: bold;">Beratcan Polat</span>
+        </footer>
+    </div>
+</body>
+</html>

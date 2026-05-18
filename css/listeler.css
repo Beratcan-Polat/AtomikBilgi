@@ -1,0 +1,162 @@
+:root {
+    --tehlike-renk: #e74c3c;
+    --vucut-renk: #e056fd;
+    --pahali-renk: #f1c40f;
+    --evren-renk: #34495e;
+    --tekno-renk: #00cec9;
+}
+
+
+.listeler-container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.liste-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.liste-karti {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eee;
+}
+
+.liste-karti:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.liste-kapak {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: white;
+    position: relative;
+}
+
+.kapak-tehlike { background: linear-gradient(135deg, #c0392b, #e74c3c); }
+.kapak-vucut { background: linear-gradient(135deg, #be2edd, #e056fd); }
+.kapak-pahali { background: linear-gradient(135deg, #f39c12, #f1c40f); }
+.kapak-evren { background: linear-gradient(135deg, #2c3e50, #34495e); }
+.kapak-tekno { background: linear-gradient(135deg, #00b894, #00cec9); }
+
+.liste-baslik-alani {
+    padding: 25px;
+    text-align: center;
+}
+
+.liste-baslik-alani h3 {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.liste-baslik-alani p {
+    color: #7f8c8d;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.liste-detay-header {
+    padding: 60px 40px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.liste-detay-header h1 { font-size: 2.5rem; margin-bottom: 15px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+.liste-detay-header p { font-size: 1.2rem; opacity: 0.9; max-width: 800px; margin: 0 auto; }
+
+.sirali-liste {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.liste-elemani {
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-start; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    overflow: hidden;
+    transition: transform 0.3s;
+    border-left: 5px solid transparent; 
+}
+
+.liste-elemani:hover {
+    transform: translateX(10px);
+}
+
+.sira-no {
+    background: #f1f2f6;
+    min-width: 80px;
+    align-self: stretch; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #bdc3c7;
+    border-right: 1px solid #eee;
+}
+
+.eleman-icerik {
+    padding: 25px;
+    flex-grow: 1;
+}
+
+.eleman-baslik {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #f5f6fa;
+    padding-bottom: 10px;
+}
+
+.eleman-adi {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.eleman-sembol {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: #2f3542;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 8px;
+}
+
+.eleman-aciklama {
+    color: #636e72;
+    line-height: 1.6;
+}
+
+.tema-tehlike .sira-no { color: rgba(231, 76, 60, 0.4); }
+.tema-tehlike .liste-elemani { border-left-color: #e74c3c; }
+
+.tema-pahali .sira-no { color: rgba(241, 196, 15, 0.4); }
+.tema-pahali .liste-elemani { border-left-color: #f1c40f; }
+
+.tema-vucut .sira-no { color: rgba(224, 86, 253, 0.4); }
+.tema-vucut .liste-elemani { border-left-color: #e056fd; }

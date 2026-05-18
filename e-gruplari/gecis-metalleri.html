@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Geçiş Metalleri - Element Grupları</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/element-gruplari.css">
+    <style>
+        .grup-detay-header {
+            background: linear-gradient(135deg, #ff9ff3, #cd84f1); 
+            color: white; 
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 15px rgba(205, 132, 241, 0.4);
+        }
+        .grup-detay-header h1 { margin-bottom: 15px; font-size: 2.5rem; color: white; }
+        .grup-detay-header p { font-size: 1.1rem; line-height: 1.6; opacity: 0.95; font-weight: 500; }
+        
+
+        .element-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .el-kart {
+            background: white;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .el-kart:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-color: #ff9ff3; 
+        }
+        .el-no { font-size: 0.9rem; color: #777; margin-bottom: 5px; }
+        .el-sembol { font-size: 2.5rem; font-weight: bold; color: #cd84f1; margin-bottom: 5px; } 
+        .el-isim { font-weight: 600; font-size: 1.1rem; }
+    </style>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <ul>
+            <li><a href="../index.html"><i class="fa-solid fa-house"></i><span class="link-text">Ana Sayfa</span></a></li>
+            <li><a href="elementgruplari.html" class="aktif"><i class="fa-solid fa-atom"></i><span class="link-text">Element Grupları</span></a></li>
+            <li><a href="../kimyacilar/kimyacilar.html"><i class="fa-solid fa-flask"></i><span class="link-text">Kimya Öncüleri</span></a></li>
+            <li><a href="../listeler/ilginc-listeler.html"><i class="fa-solid fa-list-ul"></i><span class="link-text">İlginç Listeler</span></a></li>
+
+        </ul>
+    </aside>
+
+    <div class="icerik">
+        <div class="ust-baslik">
+            <div class="site-logo">ATOMİK<span style="color:var(--ana-renk)">BİLGİ</span></div>
+            <a href="elementgruplari.html" class="geri-btn"><i class="fa-solid fa-arrow-left"></i> Gruplara Dön</a>
+        </div>
+
+        <div class="gruplar-container">
+            <div class="grup-detay-header">
+                <h1><i class="fa-solid fa-layer-group"></i> Geçiş Metalleri (B Grupları)</h1>
+                <p>
+                    Geçiş metalleri, periyodik tablonun merkezinde (3. gruptan 12. gruba kadar) yer alan en geniş element grubudur. 
+                    Demir, bakır, altın ve gümüş gibi günlük hayatta en çok karşılaştığımız metaller bu gruptadır.
+                </p>
+                <p style="margin-top: 15px; border-top: 1px solid rgba(0,0,0,0.1); padding-top: 15px;">
+                    <strong>Genel Özellikleri:</strong> <br>
+                    • Sert, dayanıklı ve yüksek erime noktasına sahiptirler (Cıva hariç).<br>
+                    • Isı ve elektriği iyi iletirler.<br>
+                    • Bileşikleri genellikle canlı ve çeşitli renklere sahiptir.<br>
+                    • Farklı kimyasal tepkimelerde farklı değerlikler (+2, +3, +6 vb.) alabilirler.
+                </p>
+            </div>
+
+            <div class="ozellik-grid">
+                <div class="ozellik-kutu" style="border-color: #ff9ff3;">
+                    <h3 style="color: #be2edd;"><i class="fa-solid fa-palette"></i> Renkli Bileşikler</h3>
+                    <p>Elektron yapılarından dolayı ışığı farklı şekillerde soğururlar. Boya pigmentlerinin çoğu (Krom sarısı, Kobalt mavisi) bu gruptan gelir.</p>
+                </div>
+                <div class="ozellik-kutu" style="border-color: #ff9ff3;">
+                    <h3 style="color: #be2edd;"><i class="fa-solid fa-arrows-spin"></i> Değişken Değerlik</h3>
+                    <p>Diğer grupların aksine, birden fazla iyon yükü alabilirler. Örneğin Demir hem +2 (Yeşilimsi) hem +3 (Pas rengi) olabilir.</p>
+                </div>
+                <div class="ozellik-kutu" style="border-color: #ff9ff3;">
+                    <h3 style="color: #be2edd;"><i class="fa-solid fa-industry"></i> Katalitik Özellik</h3>
+                    <p>Kimyasal reaksiyonları hızlandırırlar. Araç egzozlarındaki platin veya yapay gübre üretimindeki demir buna örnektir.</p>
+                </div>
+            </div>
+
+            <div class="bilgi-paneli">
+                <h2><i class="fa-solid fa-chart-simple"></i> Önemli Rekortmenler</h2>
+                <p>Geçiş metalleri, fiziksel özellikler bakımından periyodik tablonun "en"lerini barındırır.</p>
+                
+                <table class="trend-tablosu">
+                    <thead>
+                        <tr>
+                            <th>Özellik</th>
+                            <th>Rekortmen Element</th>
+                            <th>Değer / Açıklama</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>En Yüksek Erime Noktası</strong></td>
+                            <td>Volfram (W)</td>
+                            <td>3422°C (Ampul tellerinde kullanılır)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>En Yüksek Yoğunluk</strong></td>
+                            <td>Osmiyum (Os)</td>
+                            <td>22.59 g/cm³ (Kurşundan 2 kat ağırdır)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>En İyi İletkenlik</strong></td>
+                            <td>Gümüş (Ag)</td>
+                            <td>Elektriği ve ısıyı en iyi ileten metaldir.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tek Sıvı Metal</strong></td>
+                            <td>Cıva (Hg)</td>
+                            <td>Oda sıcaklığında sıvı olan tek metaldir (-38°C'de donar).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bilgi-paneli">
+                <h2><i class="fa-solid fa-toolbox"></i> Nerelerde Kullanılır?</h2>
+                <div class="kullanim-listesi">
+                    <li style="border-left: 5px solid #95a5a6;"><strong>Demir (Fe):</strong> Çelik üretimi, inşaat, otomotiv (En çok kullanılan metal).</li>
+                    <li style="border-left: 5px solid #e67e22;"><strong>Bakır (Cu):</strong> Elektrik kabloları, elektronik devreler.</li>
+                    <li style="border-left: 5px solid #f1c40f;"><strong>Altın (Au):</strong> Mücevherat, para, uzay teknolojisi (korozyona uğramaz).</li>
+                    <li style="border-left: 5px solid #3498db;"><strong>Titanyum (Ti):</strong> Uçak gövdeleri, protezler (Hafif ve çok sağlam).</li>
+                    <li style="border-left: 5px solid #2ecc71;"><strong>Krom (Cr):</strong> Paslanmaz çelik kaplama, parlak metal yüzeyler.</li>
+                </div>
+            </div>
+
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px;">Bu Gruptaki Elementler</h2>
+            
+            <div class="element-grid">
+                
+                <a href="../elementler/skandiyum.html" class="el-kart">
+                    <span class="el-no">21</span><span class="el-sembol">Sc</span><span class="el-isim">Skandiyum</span>
+                </a>
+                <a href="../elementler/titanyum.html" class="el-kart">
+                    <span class="el-no">22</span><span class="el-sembol">Ti</span><span class="el-isim">Titanyum</span>
+                </a>
+                <a href="../elementler/vanadyum.html" class="el-kart">
+                    <span class="el-no">23</span><span class="el-sembol">V</span><span class="el-isim">Vanadyum</span>
+                </a>
+                <a href="../elementler/krom.html" class="el-kart">
+                    <span class="el-no">24</span><span class="el-sembol">Cr</span><span class="el-isim">Krom</span>
+                </a>
+                <a href="../elementler/mangan.html" class="el-kart">
+                    <span class="el-no">25</span><span class="el-sembol">Mn</span><span class="el-isim">Mangan</span>
+                </a>
+                <a href="../elementler/demir.html" class="el-kart">
+                    <span class="el-no">26</span><span class="el-sembol">Fe</span><span class="el-isim">Demir</span>
+                </a>
+                <a href="../elementler/kobalt.html" class="el-kart">
+                    <span class="el-no">27</span><span class="el-sembol">Co</span><span class="el-isim">Kobalt</span>
+                </a>
+                <a href="../elementler/nikel.html" class="el-kart">
+                    <span class="el-no">28</span><span class="el-sembol">Ni</span><span class="el-isim">Nikel</span>
+                </a>
+                <a href="../elementler/bakir.html" class="el-kart">
+                    <span class="el-no">29</span><span class="el-sembol">Cu</span><span class="el-isim">Bakır</span>
+                </a>
+                <a href="../elementler/cinko.html" class="el-kart">
+                    <span class="el-no">30</span><span class="el-sembol">Zn</span><span class="el-isim">Çinko</span>
+                </a>
+
+                <a href="../elementler/itriyum.html" class="el-kart">
+                    <span class="el-no">39</span><span class="el-sembol">Y</span><span class="el-isim">İtriyum</span>
+                </a>
+                <a href="../elementler/zirkonyum.html" class="el-kart">
+                    <span class="el-no">40</span><span class="el-sembol">Zr</span><span class="el-isim">Zirkonyum</span>
+                </a>
+                <a href="../elementler/niyobyum.html" class="el-kart">
+                    <span class="el-no">41</span><span class="el-sembol">Nb</span><span class="el-isim">Niyobyum</span>
+                </a>
+                <a href="../elementler/molibden.html" class="el-kart">
+                    <span class="el-no">42</span><span class="el-sembol">Mo</span><span class="el-isim">Molibden</span>
+                </a>
+                <a href="../elementler/teknesyum.html" class="el-kart">
+                    <span class="el-no">43</span><span class="el-sembol">Tc</span><span class="el-isim">Teknesyum</span>
+                </a>
+                <a href="../elementler/rutenyum.html" class="el-kart">
+                    <span class="el-no">44</span><span class="el-sembol">Ru</span><span class="el-isim">Rutenyum</span>
+                </a>
+                <a href="../elementler/rodyum.html" class="el-kart">
+                    <span class="el-no">45</span><span class="el-sembol">Rh</span><span class="el-isim">Rodyum</span>
+                </a>
+                <a href="../elementler/palladyum.html" class="el-kart">
+                    <span class="el-no">46</span><span class="el-sembol">Pd</span><span class="el-isim">Palladyum</span>
+                </a>
+                <a href="../elementler/gumus.html" class="el-kart">
+                    <span class="el-no">47</span><span class="el-sembol">Ag</span><span class="el-isim">Gümüş</span>
+                </a>
+                <a href="../elementler/kadmiyum.html" class="el-kart">
+                    <span class="el-no">48</span><span class="el-sembol">Cd</span><span class="el-isim">Kadmiyum</span>
+                </a>
+
+                <a href="../elementler/hafniyum.html" class="el-kart">
+                    <span class="el-no">72</span><span class="el-sembol">Hf</span><span class="el-isim">Hafniyum</span>
+                </a>
+                <a href="../elementler/tantal.html" class="el-kart">
+                    <span class="el-no">73</span><span class="el-sembol">Ta</span><span class="el-isim">Tantal</span>
+                </a>
+                <a href="../elementler/volfram.html" class="el-kart">
+                    <span class="el-no">74</span><span class="el-sembol">W</span><span class="el-isim">Volfram</span>
+                </a>
+                <a href="../elementler/renyum.html" class="el-kart">
+                    <span class="el-no">75</span><span class="el-sembol">Re</span><span class="el-isim">Renyum</span>
+                </a>
+                <a href="../elementler/osmiyum.html" class="el-kart">
+                    <span class="el-no">76</span><span class="el-sembol">Os</span><span class="el-isim">Osmiyum</span>
+                </a>
+                <a href="../elementler/iridyum.html" class="el-kart">
+                    <span class="el-no">77</span><span class="el-sembol">Ir</span><span class="el-isim">İridyum</span>
+                </a>
+                <a href="../elementler/platin.html" class="el-kart">
+                    <span class="el-no">78</span><span class="el-sembol">Pt</span><span class="el-isim">Platin</span>
+                </a>
+                <a href="../elementler/altin.html" class="el-kart">
+                    <span class="el-no">79</span><span class="el-sembol">Au</span><span class="el-isim">Altın</span>
+                </a>
+                <a href="../elementler/civa.html" class="el-kart">
+                    <span class="el-no">80</span><span class="el-sembol">Hg</span><span class="el-isim">Cıva</span>
+                </a>
+
+                <a href="../elementler/rutherfordiyum.html" class="el-kart">
+                    <span class="el-no">104</span><span class="el-sembol">Rf</span><span class="el-isim">Rutherfordiyum</span>
+                </a>
+                <a href="../elementler/dubniyum.html" class="el-kart">
+                    <span class="el-no">105</span><span class="el-sembol">Db</span><span class="el-isim">Dubniyum</span>
+                </a>
+                <a href="../elementler/seaborgiyum.html" class="el-kart">
+                    <span class="el-no">106</span><span class="el-sembol">Sg</span><span class="el-isim">Seaborgiyum</span>
+                </a>
+                <a href="../elementler/bohriyum.html" class="el-kart">
+                    <span class="el-no">107</span><span class="el-sembol">Bh</span><span class="el-isim">Bohriyum</span>
+                </a>
+                <a href="../elementler/hasiyum.html" class="el-kart">
+                    <span class="el-no">108</span><span class="el-sembol">Hs</span><span class="el-isim">Hasiyum</span>
+                </a>
+                <a href="../elementler/meytneriyum.html" class="el-kart">
+                    <span class="el-no">109</span><span class="el-sembol">Mt</span><span class="el-isim">Meytneriyum</span>
+                </a>
+                <a href="../elementler/darmstadtiyum.html" class="el-kart">
+                    <span class="el-no">110</span><span class="el-sembol">Ds</span><span class="el-isim">Darmstadtiyum</span>
+                </a>
+                <a href="../elementler/rontgeniyum.html" class="el-kart">
+                    <span class="el-no">111</span><span class="el-sembol">Rg</span><span class="el-isim">Röntgeniyum</span>
+                </a>
+                <a href="../elementler/kopernikyum.html" class="el-kart">
+                    <span class="el-no">112</span><span class="el-sembol">Cn</span><span class="el-isim">Kopernikyum</span>
+                </a>
+
+            </div>
+        </div>
+
+        <footer style="background-color: #1e293b; color: #94a3b8; text-align: center; padding: 20px 0; margin-top: 50px; font-family: sans-serif; font-size: 14px;">
+             &copy; 2025 Periyodik Tablo Web Sitesi — Hazırlayan: <span style="color: #fff; font-weight: bold;">Beratcan Polat</span>
+        </footer>
+    </div>
+</body>
+</html>

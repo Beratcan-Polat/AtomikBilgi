@@ -1,0 +1,363 @@
+:root {
+    --sidebar-bg: #2c3e50;
+    --ana-renk: #3498db;
+    --yazi-renk: #2c3e50;
+    --arkaplan: #f4f6f7;
+    --kutu-golge: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--arkaplan);
+    color: var(--yazi-renk);
+    display: flex;
+}
+
+.sayfa-baslik {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--sidebar-bg);
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-bottom: 3px solid var(--ana-renk);
+    padding-bottom: 15px;
+    display: inline-block;
+}
+
+.sayfa-aciklama {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+    color: #576574;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+aside.sidebar {
+    background-color: var(--sidebar-bg);
+    width: 80px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 275px;
+    overflow: hidden;
+    transition: width 0.4s ease;
+    z-index: 100;
+    flex-shrink: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+aside.sidebar:hover {
+    width: 230px;
+}
+
+.sidebar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-left: 4px solid transparent;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+.sidebar a i {
+    min-width: 80px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sidebar a .link-text {
+    opacity: 0;
+    transition: opacity 0.3s;
+    margin-left: 10px;
+}
+
+aside.sidebar:hover a .link-text {
+    opacity: 1;
+}
+
+.sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left-color: var(--ana-renk);
+    color: var(--ana-renk);
+}
+
+.sidebar a.aktif {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-left-color: var(--ana-renk);
+    color: var(--ana-renk);
+}
+
+.icerik {
+    flex: 1;
+    padding: 40px;
+    width: 100%;
+}
+
+.ust-baslik {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.site-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--sidebar-bg);
+}
+
+.site-bilgi {
+    background: linear-gradient(135deg, var(--sidebar-bg), var(--ana-renk));
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: var(--kutu-golge);
+}
+
+.site-bilgi h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.site-bilgi p {
+    opacity: 0.9;
+    font-size: 18px;
+}
+
+.tablo-aciklama {
+    max-width: 1400px;
+    margin: 20px auto 10px auto;
+    padding-left: 20px;
+    color: #666;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.periyodik-tablo-container {
+    display: grid;
+    grid-template-columns: 30px repeat(18, 1fr);
+    grid-template-rows: 30px repeat(7, 1fr) 20px repeat(2, 1fr);
+    gap: 4px;
+    padding: 20px;
+    background-color: white;
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+.tablo-no,
+.tablo-baslik {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+}
+
+.tablo-no {
+    justify-content: flex-end;
+    padding-right: 5px;
+}
+
+.tablo-baslik {
+    align-items: flex-end;
+    padding-bottom: 5px;
+    grid-row: 1;
+}
+
+.element {
+    aspect-ratio: 1 / 1;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    border-radius: 3px;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.element:hover {
+    transform: scale(1.2);
+    z-index: 100;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid #000;
+    font-weight: bold;
+}
+
+.el-no {
+    font-size: 10px;
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    opacity: 0.7;
+}
+
+.el-sembol {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.el-isim {
+    font-size: 9px;
+    margin-top: 2px;
+    text-align: center;
+}
+
+
+.renk-ametal {
+    background-color: #dcedc8;
+    border-bottom: 3px solid #9ccc65;
+    color: #33691e;
+}
+
+.renk-soygaz {
+    background-color: #e1bee7;
+    border-bottom: 3px solid #ab47bc;
+    color: #4a148c;
+}
+
+.renk-alkali {
+    background-color: #ffcdd2;
+    border-bottom: 3px solid #e57373;
+    color: #b71c1c;
+}
+
+.renk-toprakalkali {
+    background-color: #fff9c4;
+    border-bottom: 3px solid #fdd835;
+    color: #f57f17;
+}
+
+.renk-gecis {
+    background-color: #bbdefb;
+    border-bottom: 3px solid #42a5f5;
+    color: #0d47a1;
+}
+
+.renk-metal {
+    background-color: #cfd8dc;
+    border-bottom: 3px solid #78909c;
+    color: #263238;
+}
+
+.renk-yarimetal {
+    background-color: #b2dfdb;
+    border-bottom: 3px solid #26a69a;
+    color: #004d40;
+}
+
+.renk-lantanit {
+    background-color: #f8bbd0;
+    border-bottom: 3px solid #ec407a;
+    color: #880e4f;
+}
+
+.renk-aktinit {
+    background-color: #c5cae9;
+    border-bottom: 3px solid #5c6bc0;
+    color: #1a237e;
+}
+
+.renk-halojen {
+    background-color: #ffe0b2;
+    border-bottom: 3px solid #ffa726;
+    color: #e65100;
+}
+
+
+.col-18 {
+    grid-column-start: 19;
+}
+
+.col-H {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.col-13 {
+    grid-column-start: 14;
+}
+
+.bosluk-satir {
+    grid-column: 1 / -1;
+    height: 20px;
+}
+
+.lantanit-baslangic {
+    grid-column-start: 5;
+}
+
+.lejant-kutu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.lejant-oge {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #555;
+}
+
+.lejant-oge .kutu {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 8px;
+    border-radius: 4px;
+}
+
+.geri-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: var(--ana-renk);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.geri-btn:hover {
+    background-color: #2980b9;
+    transform: translateX(-5px);
+}

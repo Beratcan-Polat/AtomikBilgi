@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Lantanitler - Element Grupları</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/element-gruplari.css">
+    <style>
+        .grup-detay-header {
+            background: linear-gradient(135deg, #ff9f43, #e67e22); 
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4);
+        }
+        .grup-detay-header h1 { margin-bottom: 15px; font-size: 2.5rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+        .grup-detay-header p { font-size: 1.1rem; line-height: 1.6; opacity: 0.95; font-weight: 500; }
+        
+        .element-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .el-kart {
+            background: white;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .el-kart:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-color: #ff9f43; 
+        }
+        .el-no { font-size: 0.9rem; color: #777; margin-bottom: 5px; }
+        .el-sembol { font-size: 2.5rem; font-weight: bold; color: #e67e22; margin-bottom: 5px; } 
+        .el-isim { font-weight: 600; font-size: 1.1rem; }
+    </style>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <ul>
+            <li><a href="../index.html"><i class="fa-solid fa-house"></i><span class="link-text">Ana Sayfa</span></a></li>
+            <li><a href="elementgruplari.html" class="aktif"><i class="fa-solid fa-atom"></i><span class="link-text">Element Grupları</span></a></li>
+            <li><a href="../kimyacilar/kimyacilar.html"><i class="fa-solid fa-flask"></i><span class="link-text">Kimya Öncüleri</span></a></li>
+            <li><a href="../listeler/ilginc-listeler.html"><i class="fa-solid fa-list-ul"></i><span class="link-text">İlginç Listeler</span></a></li>
+
+        </ul>
+    </aside>
+
+    <div class="icerik">
+        <div class="ust-baslik">
+            <div class="site-logo">ATOMİK<span style="color:var(--ana-renk)">BİLGİ</span></div>
+            <a href="elementgruplari.html" class="geri-btn"><i class="fa-solid fa-arrow-left"></i> Gruplara Dön</a>
+        </div>
+
+        <div class="gruplar-container">
+            <div class="grup-detay-header">
+                <h1><i class="fa-solid fa-magnet"></i> Lantanitler (Nadir Toprak Elementleri)</h1>
+                <p>
+                    Lantanitler, atom numarası 57 (Lantan) ile 71 (Lütesyum) arasındaki 15 elementten oluşan özel bir gruptur. 
+                    Genellikle "Nadir Toprak Elementleri" olarak anılsalar da, aslında doğada o kadar da nadir değillerdir; ancak saf halde ayrıştırılmaları çok zordur.
+                </p>
+                <p style="margin-top: 15px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 15px;">
+                    <strong>Genel Özellikleri:</strong> <br>
+                    • Gümüşi beyaz, yumuşak metallerdir.<br>
+                    • Havada hızla kararırlar ve oksitlenirler.<br>
+                    • Yüksek erime ve kaynama noktalarına sahiptirler.<br>
+                    • Kimyasal özellikleri birbirine o kadar benzer ki, keşfedilmeleri ve ayrıştırılmaları yüzyıllar sürmüştür.
+                </p>
+            </div>
+
+            <div class="ozellik-grid">
+                <div class="ozellik-kutu" style="border-color: #ff9f43;">
+                    <h3 style="color: #e67e22;"><i class="fa-solid fa-compress-arrows-alt"></i> Lantanit Büzülmesi</h3>
+                    <p>Atom numarası arttıkça atom çapının küçülmesi olayıdır. Bu durum, kendilerinden sonra gelen elementlerin (Hf, Ta) özelliklerini etkiler.</p>
+                </div>
+                <div class="ozellik-kutu" style="border-color: #ff9f43;">
+                    <h3 style="color: #e67e22;"><i class="fa-solid fa-magnet"></i> Manyetik Güç</h3>
+                    <p>Bu gruptaki elementlerin çoğu (özellikle Neodim, Samaryum) çok güçlü manyetik özellikler gösterir. Dünyanın en güçlü mıknatısları bunlardan yapılır.</p>
+                </div>
+                <div class="ozellik-kutu" style="border-color: #ff9f43;">
+                    <h3 style="color: #e67e22;"><i class="fa-solid fa-lightbulb"></i> Lüminesans (Işıma)</h3>
+                    <p>UV ışığı altında veya elektrik akımıyla parlak ve keskin renkler verirler. TV ekranlarındaki kırmızı ve yeşil renklerin kaynağıdırlar.</p>
+                </div>
+            </div>
+
+            <div class="bilgi-paneli">
+                <h2><i class="fa-solid fa-location-dot"></i> Ytterby Köyü'nün Mirası</h2>
+                <p>İsveç'in küçük bir köyü olan Ytterby, bu gruptaki tam 4 elemente ismini vermiştir. Bu, bilim tarihinde eşsiz bir durumdur.</p>
+                
+                <table class="trend-tablosu">
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Sembol</th>
+                            <th>İsim Kökeni</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Erbiyum</strong></td>
+                            <td>Er</td>
+                            <td>Ytt<strong>erby</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Terbiyum</strong></td>
+                            <td>Tb</td>
+                            <td>Yt<strong>terb</strong>y</td>
+                        </tr>
+                        <tr>
+                            <td><strong>İterbiyum</strong></td>
+                            <td>Yb</td>
+                            <td><strong>Ytterb</strong>y</td>
+                        </tr>
+                        <tr>
+                            <td><strong>İtriyum</strong></td>
+                            <td>Y</td>
+                            <td><strong>Y</strong>tterby (Lantanit olmasa da kimyasal ikizleridir)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bilgi-paneli">
+                <h2><i class="fa-solid fa-microchip"></i> Yüksek Teknoloji Uygulamaları</h2>
+                <div class="kullanim-listesi">
+                    <li style="border-left: 5px solid #e91e63;"><strong>Neodim (Nd):</strong> Kulaklıklar, sabit diskler ve elektrikli araba motorlarındaki süper mıknatıslar.</li>
+                    <li style="border-left: 5px solid #9c27b0;"><strong>Lantan (La):</strong> Hibrit araç bataryaları ve kamera lensleri.</li>
+                    <li style="border-left: 5px solid #f44336;"><strong>Evropiyum (Eu):</strong> Euro banknotlarındaki güvenlik şeritleri ve kırmızı fosfor (TV ekranı).</li>
+                    <li style="border-left: 5px solid #4caf50;"><strong>Terbiyum (Tb):</strong> Yeşil fosfor (Ekran teknolojisi) ve sonar sistemleri.</li>
+                    <li style="border-left: 5px solid #ff9800;"><strong>Seryum (Ce):</strong> Çakmak taşları ve kendi kendini temizleyen fırınlar.</li>
+                </div>
+            </div>
+
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px;">Bu Gruptaki Elementler</h2>
+            
+            <div class="element-grid">
+                
+                <a href="../elementler/lantan.html" class="el-kart">
+                    <span class="el-no">57</span><span class="el-sembol">La</span><span class="el-isim">Lantan</span>
+                </a>
+                <a href="../elementler/seryum.html" class="el-kart">
+                    <span class="el-no">58</span><span class="el-sembol">Ce</span><span class="el-isim">Seryum</span>
+                </a>
+                <a href="../elementler/praseodim.html" class="el-kart">
+                    <span class="el-no">59</span><span class="el-sembol">Pr</span><span class="el-isim">Praseodim</span>
+                </a>
+                <a href="../elementler/neodim.html" class="el-kart">
+                    <span class="el-no">60</span><span class="el-sembol">Nd</span><span class="el-isim">Neodim</span>
+                </a>
+                <a href="../elementler/prometyum.html" class="el-kart">
+                    <span class="el-no">61</span><span class="el-sembol">Pm</span><span class="el-isim">Prometyum</span>
+                </a>
+                <a href="../elementler/samaryum.html" class="el-kart">
+                    <span class="el-no">62</span><span class="el-sembol">Sm</span><span class="el-isim">Samaryum</span>
+                </a>
+                <a href="../elementler/evropiyum.html" class="el-kart">
+                    <span class="el-no">63</span><span class="el-sembol">Eu</span><span class="el-isim">Evropiyum</span>
+                </a>
+                <a href="../elementler/gadolinyum.html" class="el-kart">
+                    <span class="el-no">64</span><span class="el-sembol">Gd</span><span class="el-isim">Gadolinyum</span>
+                </a>
+                <a href="../elementler/terbiyum.html" class="el-kart">
+                    <span class="el-no">65</span><span class="el-sembol">Tb</span><span class="el-isim">Terbiyum</span>
+                </a>
+                <a href="../elementler/disprosiyum.html" class="el-kart">
+                    <span class="el-no">66</span><span class="el-sembol">Dy</span><span class="el-isim">Disprosiyum</span>
+                </a>
+                <a href="../elementler/holmiyum.html" class="el-kart">
+                    <span class="el-no">67</span><span class="el-sembol">Ho</span><span class="el-isim">Holmiyum</span>
+                </a>
+                <a href="../elementler/erbiyum.html" class="el-kart">
+                    <span class="el-no">68</span><span class="el-sembol">Er</span><span class="el-isim">Erbiyum</span>
+                </a>
+                <a href="../elementler/tulyum.html" class="el-kart">
+                    <span class="el-no">69</span><span class="el-sembol">Tm</span><span class="el-isim">Tulyum</span>
+                </a>
+                <a href="../elementler/iterbiyum.html" class="el-kart">
+                    <span class="el-no">70</span><span class="el-sembol">Yb</span><span class="el-isim">İterbiyum</span>
+                </a>
+                <a href="../elementler/lutesyum.html" class="el-kart">
+                    <span class="el-no">71</span><span class="el-sembol">Lu</span><span class="el-isim">Lütesyum</span>
+                </a>
+
+            </div>
+        </div>
+
+        <footer style="background-color: #1e293b; color: #94a3b8; text-align: center; padding: 20px 0; margin-top: 50px; font-family: sans-serif; font-size: 14px;">
+             &copy; 2025 Periyodik Tablo Web Sitesi — Hazırlayan: <span style="color: #fff; font-weight: bold;">Beratcan Polat</span>
+        </footer>
+    </div>
+</body>
+</html>

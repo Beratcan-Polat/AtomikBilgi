@@ -1,0 +1,112 @@
+.element-baslik {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 30px;
+}
+
+.element-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
+    aspect-ratio: 1;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.el-no-buyuk {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.el-sembol-buyuk {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.el-isim-buyuk {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.element-ozelikler {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.element-ozelikler p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.element-ozelikler strong {
+    color: var(--sidebar-bg);
+}
+
+.bilgi-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.bilgi-bolum {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid var(--ana-renk);
+}
+
+.bilgi-bolum h2 {
+    color: var(--sidebar-bg);
+    font-size: 22px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bilgi-bolum h2 i {
+    color: var(--ana-renk);
+}
+
+.bilgi-bolum p {
+    line-height: 1.8;
+    color: #555;
+    margin: 0;
+}
+
+.bilgi-bolum ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bilgi-bolum li {
+    padding: 10px 0;
+    padding-left: 25px;
+    position: relative;
+    color: #555;
+    line-height: 1.6;
+}
+
+.bilgi-bolum li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--ana-renk);
+    font-weight: bold;
+}

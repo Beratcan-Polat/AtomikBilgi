@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Toprak Alkali Metaller - Element Grupları</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/element-gruplari.css">
+    <style>
+
+        .grup-detay-header {
+            background: linear-gradient(135deg, #feca57, #e1b12c); 
+            color: white; 
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 15px rgba(254, 202, 87, 0.4);
+        }
+        .grup-detay-header h1 { margin-bottom: 15px; font-size: 2.5rem; color: white; }
+        .grup-detay-header p { font-size: 1.1rem; line-height: 1.6; opacity: 0.95; font-weight: 500; }
+        
+        .element-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .el-kart {
+            background: white;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .el-kart:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-color: #feca57; 
+        }
+        .el-no { font-size: 0.9rem; color: #777; margin-bottom: 5px; }
+        .el-sembol { font-size: 2.5rem; font-weight: bold; color: #e1b12c; margin-bottom: 5px; }
+        .el-isim { font-weight: 600; font-size: 1.1rem; }
+    </style>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <ul>
+            <li><a href="../index.html"><i class="fa-solid fa-house"></i><span class="link-text">Ana Sayfa</span></a></li>
+            <li><a href="elementgruplari.html" class="aktif"><i class="fa-solid fa-atom"></i><span class="link-text">Element Grupları</span></a></li>
+            <li><a href="../kimyacilar/kimyacilar.html"><i class="fa-solid fa-flask"></i><span class="link-text">Kimya Öncüleri</span></a></li>
+            <li><a href="../listeler/ilginc-listeler.html"><i class="fa-solid fa-list-ul"></i><span class="link-text">İlginç Listeler</span></a></li>
+
+        </ul>
+    </aside>
+
+    <div class="icerik">
+        <div class="ust-baslik">
+            <div class="site-logo">ATOMİK<span style="color:var(--ana-renk)">BİLGİ</span></div>
+            <a href="elementgruplari.html" class="geri-btn"><i class="fa-solid fa-arrow-left"></i> Gruplara Dön</a>
+        </div>
+
+        <div class="gruplar-container">
+            <div class="grup-detay-header">
+                <h1><i class="fa-solid fa-mountain"></i> Toprak Alkali Metaller (2A Grubu)</h1>
+                <p>
+                    Toprak alkali metaller, periyodik tablonun 2A grubunda bulunan berilyum, magnezyum, kalsiyum, stronsiyum, baryum ve radyum elementleridir. 
+                    Isıya dayanıklı olmaları ve toprakta (kayaçlarda) bolca bulunmaları nedeniyle bu ismi almışlardır.
+                </p>
+                <p style="margin-top: 15px; border-top: 1px solid rgba(0,0,0,0.1); padding-top: 15px;">
+                    <strong>Genel Özellikleri:</strong> <br>
+                    • Alkali metallerden (1A) daha serttirler ve erime noktaları daha yüksektir.<br>
+                    • Doğada saf halde bulunmazlar, genellikle karbonat ve sülfat bileşikleri halindedirler.<br>
+                    • Son yörüngelerinde 2 elektron bulunur ve kararlı bileşiklerinde +2 değerlik alırlar.
+                </p>
+            </div>
+
+            <div class="ozellik-grid">
+                <div class="ozellik-kutu" style="border-color: #feca57;">
+                    <h3 style="color: #e1b12c;"><i class="fa-solid fa-gem"></i> Daha Yüksek Erime Noktası</h3>
+                    <p>Alkali metallere kıyasla atomları birbirine daha sıkı tutunur, bu da onları daha sert ve ısıya dayanıklı yapar.</p>
+                </div>
+                <div class="ozellik-kutu" style="border-color: #feca57;">
+                    <h3 style="color: #e1b12c;"><i class="fa-solid fa-earth-europe"></i> Yerkabuğunun Temeli</h3>
+                    <p>Kalsiyum ve Magnezyum, yerkabuğunda en bol bulunan elementlerdendir (Kireçtaşı, Mermer, Dolomit).</p>
+                </div>
+                <div class="ozellik-kutu" style="border-color: #feca57;">
+                    <h3 style="color: #e1b12c;"><i class="fa-solid fa-atom"></i> +2 İyon Yükü</h3>
+                    <p>Kimyasal tepkimelerde son yörüngelerindeki 2 elektronu vererek soygaz kararlılığına ulaşırlar.</p>
+                </div>
+            </div>
+
+            <div class="bilgi-paneli">
+                <h2><i class="fa-solid fa-arrow-down-wide-short"></i> Grup İçindeki Değişimler (Yukarıdan Aşağıya)</h2>
+                <p>Toprak alkali metallerde de yukarıdan aşağıya inildikçe (Berilyum'dan Radyum'a) özellikler düzenli olarak değişir.</p>
+                
+                <table class="trend-tablosu">
+                    <thead>
+                        <tr>
+                            <th>Özellik</th>
+                            <th>Değişim Yönü ↓</th>
+                            <th>Açıklama</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Atom Çapı</strong></td>
+                            <td>Artar <i class="fa-solid fa-arrow-up"></i></td>
+                            <td>Yörünge sayısı arttığı için atom hacmi büyür.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Reaktivite</strong></td>
+                            <td>Artar <i class="fa-solid fa-arrow-up"></i></td>
+                            <td>Berilyum suyla tepkime vermezken, Baryum şiddetle tepkime verir.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>İyonlaşma Enerjisi</strong></td>
+                            <td>Azalır <i class="fa-solid fa-arrow-down"></i></td>
+                            <td>Elektronları koparmak, atom büyüdükçe kolaylaşır.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Yoğunluk</strong></td>
+                            <td>Genellikle Artar <i class="fa-solid fa-arrow-up"></i></td>
+                            <td>Kalsiyum bir istisnadır (daha hafiftir), ancak genel eğilim artış yönündedir.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bilgi-paneli">
+                <h2><i class="fa-solid fa-fire-burner"></i> Karakteristik Alev Renkleri</h2>
+                <p>Bu gruptaki metallerin tuzları ateşe tutulduğunda elektronların enerji alışverişi nedeniyle çok belirgin renkler verirler. Havai fişeklerin sırrı budur!</p>
+                <div class="kullanim-listesi">
+                    <li style="border-left: 5px solid #d35400;"><strong>Kalsiyum (Ca):</strong> Kiremit Kırmızısı / Turuncu</li>
+                    <li style="border-left: 5px solid #ff0000;"><strong>Stronsiyum (Sr):</strong> Parlak Kırmızı (Crimson)</li>
+                    <li style="border-left: 5px solid #badc58;"><strong>Baryum (Ba):</strong> Elma Yeşili</li>
+                    <li style="border-left: 5px solid #bdc3c7;"><strong>Magnezyum (Mg):</strong> Parlak Beyaz Işık (Renk vermez, yanar)</li>
+                </div>
+            </div>
+
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px;">Bu Gruptaki Elementler</h2>
+            
+            <div class="element-grid">
+                
+                <a href="../elementler/berilyum.html" class="el-kart">
+                    <span class="el-no">4</span>
+                    <span class="el-sembol">Be</span>
+                    <span class="el-isim">Berilyum</span>
+                </a>
+
+                <a href="../elementler/magnezyum.html" class="el-kart">
+                    <span class="el-no">12</span>
+                    <span class="el-sembol">Mg</span>
+                    <span class="el-isim">Magnezyum</span>
+                </a>
+
+                <a href="../elementler/kalsiyum.html" class="el-kart">
+                    <span class="el-no">20</span>
+                    <span class="el-sembol">Ca</span>
+                    <span class="el-isim">Kalsiyum</span>
+                </a>
+
+                <a href="../elementler/stronsiyum.html" class="el-kart">
+                    <span class="el-no">38</span>
+                    <span class="el-sembol">Sr</span>
+                    <span class="el-isim">Stronsiyum</span>
+                </a>
+
+                <a href="../elementler/baryum.html" class="el-kart">
+                    <span class="el-no">56</span>
+                    <span class="el-sembol">Ba</span>
+                    <span class="el-isim">Baryum</span>
+                </a>
+
+                <a href="../elementler/radyum.html" class="el-kart">
+                    <span class="el-no">88</span>
+                    <span class="el-sembol">Ra</span>
+                    <span class="el-isim">Radyum</span>
+                </a>
+
+            </div>
+        </div>
+
+        <footer style="background-color: #1e293b; color: #94a3b8; text-align: center; padding: 20px 0; margin-top: 50px; font-family: sans-serif; font-size: 14px;">
+             &copy; 2025 Periyodik Tablo Web Sitesi — Hazırlayan: <span style="color: #fff; font-weight: bold;">Beratcan Polat</span>
+        </footer>
+    </div>
+</body>
+</html>
