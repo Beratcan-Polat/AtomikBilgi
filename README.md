@@ -120,12 +120,6 @@ Adıyaman Üniversitesi
 
 ---
 
-## 📄 Lisans
-
-Bu proje eğitim amaçlı geliştirilmiştir.
-
----
-
 <div align="center">
 
 ⚛️ *Evrenin yapı taşlarını keşfetmeye başlayın!* ⚛️
