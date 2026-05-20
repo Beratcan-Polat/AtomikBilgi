@@ -90,7 +90,11 @@ AtomikBilgi/
 
 ## 🚀 Kullanım
 
-Projeyi yerel ortamınızda çalıştırmak için:
+🌐 **Siteyi hemen ziyaret edin:** [atomik-bilgi.vercel.app](https://atomik-bilgi.vercel.app/)
+
+### Yerel Ortamda Çalıştırma
+
+Projeyi kendi bilgisayarınızda çalıştırmak isterseniz:
 
 1. **Depoyu klonlayın:**
    ```bash
