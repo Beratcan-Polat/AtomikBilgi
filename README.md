@@ -10,6 +10,8 @@
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/tr/docs/Web/CSS)
 [![Font Awesome](https://img.shields.io/badge/Font_Awesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white)](https://fontawesome.com/)
 
+🌐 **[Canlı Demo](https://atomik-bilgi.vercel.app/)**
+
 </div>
 
 ---
@@ -18,7 +20,6 @@
 
 **AtomikBilgi**, periyodik tablodaki tüm 118 elementi detaylı bir şekilde tanıtan, tamamen Türkçe olarak hazırlanmış interaktif bir web sitesidir. Elementlerin fiziksel ve kimyasal özellikleri, kullanım alanları ve keşif hikayeleri gibi bilgilere kolayca ulaşabilirsiniz.
 
-Bu proje, **Adıyaman Üniversitesi 4. Sınıf Güz Dönemi** dersi kapsamında geliştirilmiştir.
 
 ## ✨ Özellikler
 
