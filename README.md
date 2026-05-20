@@ -1,4 +1,4 @@
-<![CDATA[# ⚛️ AtomikBilgi — İnteraktif Periyodik Tablo Web Sitesi
+# ⚛️ AtomikBilgi — İnteraktif Periyodik Tablo Web Sitesi
 
 <div align="center">
 
@@ -131,4 +131,3 @@ Bu proje eğitim amaçlı geliştirilmiştir.
 ⚛️ *Evrenin yapı taşlarını keşfetmeye başlayın!* ⚛️
 
 </div>
-]]>
